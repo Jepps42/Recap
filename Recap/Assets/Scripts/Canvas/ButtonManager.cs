@@ -22,4 +22,9 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }
