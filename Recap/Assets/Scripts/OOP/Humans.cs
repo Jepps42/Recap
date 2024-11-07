@@ -11,19 +11,19 @@ public class Humans : Mammal
 
     public bool criticalBrainStuff;
 
-
-    public Humans(string carbon, string newBorns, bool milkProduction, bool criticalBrainStuff, string speakingLanguage, bool extremeSweating) : 
+    //Make Humans a subclass of Mammals
+    public Humans(string carbon, string newBorns, bool milkProduction, bool extremeSweating, string speakingLanguage, bool criticalBrainStuff) : 
         base(carbon, newBorns, milkProduction)
     {
+        this.extremeSweating = extremeSweating;
         this.criticalBrainStuff = criticalBrainStuff;
         this.speakingLanguage = speakingLanguage;
-        this.extremeSweating = extremeSweating;
-        this.type = "Humans";
+        this.type = "Human";
     }
 
     public override string showRecord()
     {
-        return base.showRecord() + "Critical Brain Stuff: " + criticalBrainStuff + "\n" + "Speaking Language: " + speakingLanguage + "\n" + "Extreme Sweating: " + extremeSweating;
+        return base.showRecord() + "Sweat: " + extremeSweating + "\n" + "Speaking Language: " + speakingLanguage + "\n" + "Critical Thinking: " + criticalBrainStuff + "\n";
     }
 
 }

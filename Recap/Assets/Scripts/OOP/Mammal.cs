@@ -20,7 +20,7 @@ public class Mammal : Organism
 
     public override string showRecord()
     {
-        return base.showRecord() + "Milk Production: " + milkProduction + "\n" + "Newborns: " + newBorns;
+        return base.showRecord() + "Milk Production: " + milkProduction + "\n" + "Newborns: " + newBorns + "\n";
     }
 
    
